@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20_12_17</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h3>Bronze III  </h3>  2739
+<pre class=" language-python"><code class="prism  language-python">n <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+num <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    num <span class="token operator">+=</span><span class="token number">1</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span><span class="token string">"*"</span><span class="token punctuation">,</span>num<span class="token punctuation">,</span><span class="token string">"="</span><span class="token punctuation">,</span>n<span class="token operator">*</span>num<span class="token punctuation">)</span>
+</code></pre>
+<h3>Bronze II  </h3>
+2577
+<pre class=" language-python"><code class="prism  language-python">a <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+num <span class="token operator">=</span> a <span class="token operator">*</span> b <span class="token operator">*</span> c
+numList <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    numCount <span class="token operator">=</span> numList<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>numCount<span class="token punctuation">)</span>
+</code></pre>
+<h3>Bronze I </h3>
+2839
+<pre class=" language-python"><code class="prism  language-python"> a <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+count <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword">if</span> a<span class="token operator">%</span><span class="token number">5</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token operator">//</span><span class="token number">5</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        a <span class="token operator">=</span> a<span class="token number">-3</span>
+        count<span class="token operator">+=</span><span class="token number">1</span>
+        <span class="token keyword">if</span> a <span class="token operator">%</span> <span class="token number">5</span> <span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
+            count<span class="token operator">+=</span>a<span class="token operator">//</span><span class="token number">5</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+        <span class="token keyword">elif</span>  a <span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+</code></pre>
+<h3>Silver V </h3>
+2941
+<pre class=" language-python"><code class="prism  language-python">w <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token builtin">list</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'c='</span><span class="token punctuation">,</span> <span class="token string">'c-'</span><span class="token punctuation">,</span> <span class="token string">'dz='</span><span class="token punctuation">,</span> <span class="token string">'d-'</span><span class="token punctuation">,</span> <span class="token string">'lj'</span><span class="token punctuation">,</span> <span class="token string">'nj'</span><span class="token punctuation">,</span> <span class="token string">'s='</span><span class="token punctuation">,</span> <span class="token string">'z='</span><span class="token punctuation">]</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">list</span><span class="token punctuation">:</span>
+    w <span class="token operator">=</span> w<span class="token punctuation">.</span>replace<span class="token punctuation">(</span>i<span class="token punctuation">,</span><span class="token string">','</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3>Silver IV  </h3>
+10828 
+<pre class=" language-python"><code class="prism  language-python">
+ 
+</code></pre>
+</div>
+</body>
+
+</html>
