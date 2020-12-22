@@ -9,6 +9,7 @@ for i in range(n):
             next_word = word[j+1:]
             if word[j] in next_word:
                 flag = False
+                break
     if flag == False:
         n = n-1
 print(n)
