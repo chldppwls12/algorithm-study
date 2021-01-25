@@ -2,7 +2,7 @@ n = int(input())
 for i in range(n):
     ctn =0
     total =0
-    s = input()
+    s = list(input())
     for j in s:
         if j == 'O':
             ctn = ctn + 1
